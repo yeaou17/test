@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css5</title>
+    <style type="text/css">
+
+        /*
+         为普通的链接设置一个颜色为**
+       */
+        a:link {
+            color: yellowgreen;
+        }
+        /*
+            为访问过的链接设置一个颜色为**
+          */
+        a:visited {
+            color: red;
+        }
+        /*
+             鼠标移入的状态
+           */
+        a:hover {
+            color: blue;    /*设置鼠标移到超链接的时候的颜色*/
+        }
+        /*
+             超链接被点击时的状态
+           */
+        a:active {
+            color: black;
+        }
+        /*
+             文本框获取焦点后，修改背景颜色为**
+           */
+        input:focus{
+            background-color: aqua;
+        }
+        /*
+             为p标签选中的内容使用样式
+         */
+        p::selection{
+            background-color: brown;
+        }
+        </style>
+</head>
+<body>
+
+    <a class="abc" href="http://www.baidu.com">我是一个超链接</a>
+    <br /><br />
+    <a class="bcd" href="http://www.baidu123.com">我是一个超链接</a>
+    <p>我是一个段落</p>
+        <br /><br />
+        <input type="text"/>
+
+</body>
+</html>
