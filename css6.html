@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+/*
+    为p中第一个字符来设置一个特殊的样式
+*/
+        p:first-letter{
+            color:red;
+        }
+/*
+    为p中第一行来设置一个特殊的样式
+*/
+        p:first-line{
+            color:red;
+        }
+
+/*
+    元素最前面的部分
+    一般需要结合content样式一起使用
+    通过content开头向before或after的位置添加一些内容
+
+    after表示元素的最后边部分
+*/
+        p:before{
+            content: "我会出现在整个段落的最前边（无法选定）";
+        }
+
+        p:after {
+            content: "我会出现在整个段落的最后边（无法选定）";
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+
+        <p>
+            文本文本文本文本文本文本文本文本文本文本文本
+            文本文本文本文本文本文本文本文本文本文本文本文本文本
+            文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本
+            文本文本文本文本文本文本文本文本文本文本文本文本文本
+        </p>
+
+
+</body>
+</html>
