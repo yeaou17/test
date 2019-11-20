@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器</title>
+    <style type="text/css">
+        /*
+        为所有以title属性的p元素，设置一个背景颜色
+        p[title]{
+                background-color: blue;
+        }
+
+        为title属性值为hello的元素设置一个背景颜色
+        p[title="aaa"]{
+                background-color: blue;
+        }
+
+        为title属性值以a开头的元素设置一个背景颜色
+        p[title^="a"]{
+                background-color: blue;
+        }
+
+        为title属性值以s结尾的元素设置一个背景颜色
+        p[title$="s]{
+                background-color: blue;
+        }
+
+        为title属性值包含c的元素设置一个背景颜色
+        p[title*="c"]{
+                background-color: blue;
+        }
+        */
+        p[title*="c"]{
+            background-color: blue;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+<!--
+    title属性，给任何标签指定
+    当鼠标移入到元素上时，元素中的title属性的值将会作为提示文字显示
+-->
+    <p title="title中的文字">我是一个段落</p>
+    <p >我是一个段落</p>
+    <p >我是一个段落</p>
+    <p title="aaa">我是一个段落</p>
+    <p title="abs">我是一个段落</p>
+    <p title="acs">我是一个段落</p>
+</body>
+</html>
