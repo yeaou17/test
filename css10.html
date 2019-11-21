@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>否定伪类</title>
+        <style type="text/css">
+            /*
+            为所有的p元素设置一个背景颜色，除了class值为hello的
+            */
+            p:not(.hello){
+                background-color: yellow;
+            }
+
+
+        </style>
+</head>
+<body>
+        <p class="hello">class值为hello的p标签</p>
+        <p>p标签</p>
+        <p>p标签</p>
+        <span>span标签</span>
+        <p class="abc">class值为abc的pp标签</p>
+        <p>p标签</p>
+        <p>p标签</p>
+</body>
+</html>
