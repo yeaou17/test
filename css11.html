@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css11</title>
+    <style type="text/css">
+        /*
+            去掉项目符号
+        */
+        ul{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        1。无序列表
+                - 使用ul标签来创建一个无序列表
+                - 使用li再ul中创建一个一个的列表项
+                通过type属性可以修改无序列表的项目符号
+                    disc，默认，实心远点
+                    square，实心方块
+                    circle，空心圆
+                 默认的项目符号一般不使用，如果需要，则可以采用li设置背景图片的方式来设置
+                 ul和li都是块元素
+        2。有序列表
+                有序和无序类似，但使用ol来代替ul
+                type属性：
+                    a/A 采用大写或小写字母当作序号
+                    i/I 采用大写或小写罗马数字当作序号
+        3.定义列表
+    -->
+
+    <ul type="circle">
+        <li>1111</li>
+        <li>2222</li>
+        <li>3333</li>
+        <li>4444</li>
+    </ul>
+
+    <ol type="i">
+        <li>1111</li>
+        <li>2222</li>
+        <li>3333</li>
+        <li>4444</li>
+    </ol>
+    <!--
+        列表之间可以互相嵌套
+    -->
+    <ul>
+        <li>1111</li>
+            <ol type="i">
+                <li>2222</li>
+                <li>3333</li>
+            </ol>
+        <li>4444</li>
+    </ul>
+
+
+</body>
+</html>
