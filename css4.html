@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css4</title>
+    <style type="text/css">
+    /*
+        选定id为d1的div中的span元素
+    */
+        #d1 span {
+            color: greenyellow;
+        }
+    /*
+        选定id为d1的div中的p元素中的span元素
+    */
+        #d1 p span{
+            color:fuchsia;
+        }
+    /*
+        为div的子元素span设置一个背景色为**
+     */
+        div > span{
+            background-color:yellow;
+        }
+
+    </style>
+</head>
+<body>
+        <div id="d1">
+        <span>div标签中的span</span>
+        <p><span>我是p标签中的span</span></p>
+        </div>
+
+        <div>
+        <span>我是body中的span元素</span>
+        </div>
+</body>
+</html>

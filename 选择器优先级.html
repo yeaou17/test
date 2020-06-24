@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择器优先级</title>
+    <style type="text/css">
+
+/*        .p1{
+            background-color: yellow;
+        }
+        p{
+            background-color: red;
+        }
+        #p2{
+            background-color: blue;
+        }
+        p#p2{
+            background-color:red;
+        }
+
+        *{
+            font-size: 50px;
+        }
+
+        p{
+            font-size: 30px;
+        }*/
+    /*
+    当使用不用的选择器，选中同一个元素并设置相同的样式时，样式之间产生冲突
+    ，最终采用哪个选择器啊定义的样式，由选择器的优先级（权重）决定，优先级高的优先显示
+    在样式的最后添加 !important 后，该样式将获得一个最高的优先级，优先级高于内联样式
+    （尽量不使用 内联样式 和 !.important ）
+    */
+    </style>
+
+</head>
+<body>
+        <p class="p1" id="p2" style="background-color: aqua">p标签</p>
+</body>
+</html>

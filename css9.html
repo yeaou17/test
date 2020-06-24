@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        /*
+        为span后的一个p元素设置一个背景颜色
+        */
+        /*span+p{*/
+        /*    background-color: yellow;*/
+        /*}*/
+        /*
+                为span后的s所有p元素设置一个背景颜色
+                */
+        span~p{
+            background-color: yellow;
+        }
+
+    </style>
+
+</head>
+<body>
+    <p>p标签</p>
+    <p>p标签</p>
+    <p>p标签</p>
+    <span>span标签</span>
+    <p>p标签</p>
+    <p>p标签</p>
+    <p>p标签</p>
+
+</body>
+</html>
