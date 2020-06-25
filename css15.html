@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>字体样式</title>
+    <style type="text/css">
+        .p1{
+           color: red;
+            font-size: 30px;
+            font-family: "微软雅黑";
+
+            font-style:italic;
+            /*
+            font-style可以用来设置文字的斜体
+                normal，默认值，文字正常显示
+                italic 文字斜体显示
+                oblique 文字会倾斜表示
+             大部分浏览器都不会对倾斜和斜体做区分，上述两种斜体效果往往是一致的
+             */
+
+            font-weight: bold;
+            /*
+            font-weightw文本加粗
+                normal，默认值
+                bold，文字加粗显示
+                也可以指定 100-900之间的9个值，
+                    但由于计算机往往没有那么多级别的字体，可能有不同的值达到的效果是一致的情况
+             */
+            font-variant: small-caps ;
+            /*
+            font-variant小型大写字母
+                normal，默认值
+                small-caps  文本以小型大写字母显示
+            */
+        }
+
+        .p2{
+            font-size: 50px;
+            font-family: 华文彩云 ;
+            font-style: italic;
+            font-weight: bold;
+            font-variant: small-caps ;
+        }
+
+        .p3{
+            /*
+            在CSS中，样式font，使用该样式可以同时设置字体相关的所有样式。
+            顺序要求：斜体 加粗 小大字母没有顺序，可写可不写，不写时默认；
+            文字的大小和字体必须写，且大小倒数第二，字体最后。
+            这样做性能更好，但差距不是很大，省空间
+            */
+            font: italic small-caps  bold  50px "仿宋";
+        }
+
+    </style>
+</head>
+<body>
+    <p class="p1">
+        字体：啊啊啊啊啊，abcABCIH
+    </p>
+
+    <p class="p2">
+        字体：啊啊啊啊啊，abcABCIH
+    </p>
+
+    <p class="p3">
+        字体：啊啊啊啊啊，abcABCIH
+    </p>
+
+</body>
+</html>
