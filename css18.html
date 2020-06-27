@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子模型</title>
+    <style type="text/css">
+    .box1{
+        /*内容区宽度和高度（不是盒子大小，仅是内容区大下），背景颜色*/
+        width: 100px;
+        height: 100px;
+        background-color: #bbffaa;
+
+        /*
+        为元素设置边框，必须指定三个样式，缺一不可
+            border-width：边框宽度
+                可以分别指定四个边框大小
+                border-width: 10px 20px 30px 40px;(分别对应上右下左)
+                如果指定三个值，分别设置给 上 左右 下
+                如果指定两个值，分别设置给 上下  左右
+                如果指定一个值，则四边都是该值
+            （此外还有，border-xxx-width，可以单独给某一边指定宽度）
+            border-color：边框颜色
+                指定颜色，同上
+            border-style：边框样式
+                指定边框，同上
+                none，默认值
+                solid，实线
+                dotted，点状
+                dashed，虚线
+                double，双线
+        */
+        border-width: 40px;
+        border-color: red ;
+        border-style: groove ;
+    }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>
