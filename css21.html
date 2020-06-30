@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒模型2</title>
+    <style type="text/css">
+    .box1{
+        width: 200px;
+        height: 200px;
+        background-color: #bfa;
+        border: 10px solid red;
+        /*
+        外边距指当前盒子与其他盒子之间的距离，不会影响可见框大小，而是影响盒子位置
+        盒子有四个方向的外边距：
+        margin-top、margin-right、margin-bottom、margin-left
+        由于页面中元素都是靠左靠上拜访的，所以设置左和上外边距会改变其盒子位置，
+        而右和下会影响其他元素位置
+         */
+        /*
+        外边距也可以指定为负值，    或者auto值
+        auto值一般只设置给水平方向的margin
+        如果指定，左外边距或右外边距的margin，则会将外边距设置为最大值（靠边）
+        垂直方向外边距如果设置为auto，外边距默认为0
+
+        如果left和right同时设置为auto，则两侧外边距一致（居中）
+         */
+        margin-top: 100px;
+        margin-left: -200px;
+        /*
+        margin也可以同时设置四个方向的外边距（上右下左）
+         规则与padding一样
+         */
+    }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>
