@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>display和visibility</title>
+    <style type ="text/css">
+        a{
+            background-color: red;
+            /*
+            将内联元素变成块元素
+            通过 display 样式可以修改元素类型
+            inline：改为内联元素
+            block：改为块元素
+            inline-block：改为行内块元素,既有块元素特点，又不会独占一行
+            none：隐藏元素，不会显示，且不占位置
+             */
+            display: inline-block;
+            /*
+            设置宽和高
+             */
+            width: 200px;
+            height: 200px;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: #bbffaa;
+            /*
+            visibility可以设置元素的隐藏和显示状态
+            visible：默认值，元素会在页面显示
+            hidden：元素隐藏，但是位置保持
+             */
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <a href="#">chaolianjie</a>
+    <span>hhhhhh</span>
+</body>
+</html>
