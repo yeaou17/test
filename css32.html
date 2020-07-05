@@ -5,42 +5,64 @@
     <title>解决高度塌陷的最终方案</title>
     <style type="text/css">
 
-        .box1{
+        /*.box1{*/
+        /*    width: 100px;*/
+        /*    height: 100px;*/
+        /*    background-color: #bbffaa;*/
+        /*    float: left;*/
+        /*}*/
+
+        /*.box2{*/
+        /*    width: 200px;*/
+        /*    height: 200px;*/
+        /*    background-color: #6495ED;*/
+        /*    !**/
+        /*    由于box1浮动，box2（box3）上移100px*/
+        /*    清除掉 其他元素浮动 对 当前元素 产生的影响，*/
+        /*    使用 clear：*/
+        /*    none：默认值，不清除影响*/
+        /*    left：清除左侧浮动元素对当前元素的影响*/
+        /*    right：清除右侧...*/
+        /*    both：清除两侧...（清除影响最大的元素）*/
+        /*    *!*/
+        /*    !*clear: left;!*回到box1浮动之前的位置*!*!*/
+        /*    float: right;*/
+        /*}*/
+        /*.box3{*/
+        /*    width: 300px;*/
+        /*    height: 300px;*/
+        /*    background-color: #bbaaff;*/
+        /*    clear: both; !*清除box1和box2浮动的影响，但box2的高度较高，影响较大*/
+        /*                    所以上移至box2的高度位置*!*/
+        /*}*/
+
+        .box4{
+            border: 1px solid red;
+        }
+        .box5{
             width: 100px;
             height: 100px;
-            background-color: #bbffaa;
+            background-color: #bbaaff;
+
             float: left;
         }
-
-        .box2{
-            width: 200px;
-            height: 200px;
-            background-color: #6495ED;
-            /*
-            由于box1浮动，box2（box3）上移100px
-            清除掉 其他元素浮动 对 当前元素 产生的影响，
-            使用 clear：
-            none：默认值，不清除影响
-            left：清除左侧浮动元素对当前元素的影响
-            right：清除右侧...
-            both：清除两侧...（清除影响最大的元素）
-            */
-            /*clear: left;!*回到box1浮动之前的位置*!*/
-            float: right;
-        }
-        .box3{
-            width: 300px;
-            height: 300px;
-            background-color: #bbaaff;
-            clear: both; /*清除box1和box2浮动的影响，但box2的高度较高，影响较大
-                            所以上移至box2的高度位置*/
+        /*通过after伪类，选中box1的后边
+        与添加一个div的原理一样，效果相同
+        几乎没有副作用*/
+        .box4:after{
+            content:"hello";/*可不写hello*/
+            display: block;/*块*/
+            clear: both;
         }
     </style>
 </head>
 <body>
-    <div class="box1"></div>
-    <div class="box2"></div>
-    <div class="box3"></div>
+<!--    <div class="box1"></div>-->
+<!--    <div class="box2"></div>-->
+<!--    <div class="box3"></div>-->
+    <div class="box4">
+        <div class="box5"></div>
+    </div>
 
 </body>
 </html>
