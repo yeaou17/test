@@ -15,8 +15,7 @@
 
     .outer{
         width: 300px;
-        height: 473px;
-        background-color: #bbaaff;
+        /*height: 473px;*/
         margin: 50px auto;
     }
 
@@ -36,8 +35,39 @@
         font: 16px/36px "微软雅黑";
     }
      .content {
-
+         border: 1px solid #bbbbaa;
+         padding: 0 28px 0 20px;
      }
+     .content a{
+         color: black;
+         text-decoration: none;
+         font-size: 12px;
+     }
+    .content a:hover {
+        color: #ff472c;
+        text-decoration: underline ;
+    }
+    .content ul{
+         list-style: none;
+         border-bottom: 1px dashed #deddd9;
+     }
+    .content .no-border {
+        border: none;
+    }
+    .content .red{
+        color: red;
+        font-weight: bold;
+    }
+    .content .right{
+        float: right;
+    }
+    .content h3{
+        margin-top: 14px;
+        margin-bottom: 16px;
+    }
+    .content li{
+        margin-bottom: 15px;
+    }
     </style>
 </head>
 <body>
@@ -47,7 +77,60 @@
             <a href="#">20年面授开班计划</a>
             <h3>近期开班</h3>
         </div>
-        <div class="content"></div>
+        <div class="content">
+            <h3><a href="#">JavaEE+云计算-全程就业班</a></h3>
+            <ul>
+                <li>
+                    <a href="#">开班时间：<span class="red">2020-04-27</span></a>
+                    <a class="right" href="#"><span class="red">预约报名</span></a>
+                </li>
+                <li>
+                    <a href="#">开班时间：<span class="red">2020-04-07</span></a>
+                    <a class="right" href="#"><span class="red">无座，名额爆满</span></a>
+                </li>
+                <li>
+                    <a href="#">开班时间：2020-03-15</a>
+                    <a class="right" href="#">开班盛况</a>
+                </li>
+                <li>
+                    <a href="#">开班时间：2020-02-25</a>
+                    <a class="right" href="#">开班盛况</a>
+                </li>
+                <li>
+                    <a href="#">开班时间：2019-12-26</a>
+                    <a class="right" href="#">开班盛况</a>
+                </li>
+            </ul>
+            <h3><a href="#">Android+人工智能-全程就业班</a></h3>
+            <ul>
+                <li>
+                    <a href="#">开班时间：<span class="red">2020-04-10</span></a>
+                    <a class="right" href="#"><span class="red">预约报名</span></a>
+                </li>
+                <li>
+                    <a href="#">开班时间：2020-03-17</a>
+                    <a class="right" href="#">开班盛况</a>
+                </li>
+                <li>
+                    <a href="#">开班时间：2020-02-20</a>
+                    <a class="right" href="#">开班盛况</a>
+                </li>
+                <li>
+                    <a href="#">开班时间：2019-12-23</a>
+                    <a class="right" href="#">开班盛况</a>
+                </li>
+            </ul>
+            <h3><a href="#">前端+HTML5-全程就业班</a></h3>
+            <ul class="no-border">
+                <li>
+                    <a href="#">开班时间：<span class="red">2020-05-10</span></a>
+                    <a class="right" href="#"><span class="red">预约报名</span></a>
+                <li>
+                    <a href="#">开班时间：2020-3-16</a>
+                    <a class="right" href="#">开班盛况</a>
+                </li>
+            </ul>
+        </div>
     </div>
 
 </body>
