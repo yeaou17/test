@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>固定定位</title>
+    <style type="text/css">
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #ff472c;
+        }
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: #bbffaa;
+            /*
+            定位：将指定元素摆放到页面的任意位置
+            position：static 默认，没有定位
+                      relative：相对定位
+                      absolute：绝对定位
+                      fixed：固定定位（也是绝对定位的一种）
+            */
+            /*
+            fixed 固定定位
+            也是以中绝对定位，大部分特点与绝对定位一致
+            不同:
+                固定定位永远相对于浏览器窗口进行定位
+                不会随着滚动条滚动（类似浏览器右下角的广告）
+            IE6不支持固定定位
+            */
+            position: fixed;
+            left: 100px;
+            top: 100px;
+        }
+
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: #bbbbaa;
+        }
+
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+
+<div class="box4" style="width: 300px;height: 300px; background-color: #019e8b; position: relative ;">
+    <div class="box2" ></div>
+</div>
+
+
+
+<div class="box3"></div>
+
+
+</body>
+</html>
