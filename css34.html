@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>相对定位</title>
+    <style type="text/css">
+    .box1{
+        width: 200px;
+        height: 200px;
+        background-color: #ff472c;
+    }
+
+    .box2{
+        width: 200px;
+        height: 200px;
+        background-color: #bbffaa;
+        /*
+        定位：将指定元素摆放到页面的任意位置
+        position：static 默认，没有定位
+                  relative：相对定位
+                  absolute：绝对定位
+                  fixed：固定定位（也是绝对定位的一种）
+        */
+        /*
+        relative
+        不设置偏移量的话，不会变化。开启定位时，
+        通过left right top bottom 来设置偏移量。
+        方向相反（设置left时，元素向右移；设置top时，元素向下移）
+        不会脱离文档流，即下面的元素不会上移
+        相对定位会覆盖其他元素
+        通常偏移量只需要使用两个，就可以对一个元素进行定位（水平和垂直方向）
+        */
+        position: relative;
+        left: 200px;
+        top: 200px;
+    }
+
+    .box3{
+        width: 200px;
+        height: 200px;
+        background-color: #bbbbaa;
+    }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+
+
+</body>
+</html>
