@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绝对定位</title>
+    <style type="text/css">
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #ff472c;
+        }
+
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: #bbffaa;
+            /*
+            定位：将指定元素摆放到页面的任意位置
+            position：static 默认，没有定位
+                      relative：相对定位
+                      absolute：绝对定位
+                      fixed：固定定位（也是绝对定位的一种）
+            */
+            /*
+            absolute  绝对定位
+            元素会脱离文档流
+            如果不设置偏移量，元素位置不发生变化
+            相对于浏览器窗口定位
+            绝对定位时相当于离它 最近 的开启了定位的祖先元素进行定位的。（无时相对浏览器）
+            内联元素会变成块元素，块元素的宽度和高度被内容撑开
+            */
+            position: absolute;
+            left: 100px;
+            top: 100px;
+        }
+
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: #bbbbaa;
+        }
+        .box4{
+            width: 200px;
+            height: 200px;
+            background-color: #6495ED;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+<div class="box4">
+    <div class="box2"></div>
+</div>
+
+<div class="box3"></div>
+
+
+</body>
+</html>
