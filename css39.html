@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>背景</title>
+    <style type="text/css">
+        .box1{
+            width: 1920px;
+            height: 1080px;
+            margin: 0 auto;
+            background-color: #ff472c;
+
+            /*
+            设置背景图片background-image
+            background-image: url("相对路径") ;
+            如果图片大于box1，默认现实图片的左上角
+            如果图片小于box1，默认会把图片充满box1
+
+            背景颜色会在背景图片后面
+            一般设置背景图片都会指定背景颜色
+            */
+            background-image: url("2 .jpg") ;
+
+            /*
+            background-repeat用于设置背景的重复方式
+            repeat：默认值，双向重复（平铺）
+            no-repeat：不重复
+            repeat-x：水平方向重复
+            repeat-y：垂直方向重复
+            */
+            /*background-repeat: no-repeat ;*/
+        }
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+
+
+
+</body>
+</html>
