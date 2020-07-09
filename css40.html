@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>背景2</title>
+    <style type="text/css">
+        .box1{
+            width: 1000px;
+            height: 10000px;
+            margin: 0 auto;
+            background-color: #bbffaa;
+            background-image: url("3.png") ;
+            background-repeat: no-repeat ;
+
+            /*
+            background-position 可以调整背景图片在元素中的位置
+            可选值： top right left bottom center
+                可选择其中两个值来指定图片位置(水平和垂直各一个，亦可只选一个值)
+             也可直接写水平与垂直方向的偏移值
+             background-position: 100px 0px;（可以指定负值）
+             */
+            background-position:center center ;
+        }
+        bode{
+            /*
+            background-attachment 设置图像是非跟着页面滚动
+            可选值：
+                scroll，默认值，随着窗口滚动
+                fixed，背景图片固定在某一位置，不随着滚动
+            */
+            background-image: url("3.png") ;
+            background-repeat: no-repeat ;
+            background-attachment: scroll;
+        }
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+
+
+
+</body>
+</html>
